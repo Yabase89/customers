@@ -1,8 +1,13 @@
 <html>
     <head>
         <title>Customer Dashboard</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}" />
+        <style>
+            .w-5{
+                display:none;
+            }
+        </style>
     </head>
     <body>
         <div class="container mt-5">
@@ -49,6 +54,7 @@
                             @endforeach
                         </tbody>
                     </table>
+                    {{$customers->links()}}
                 </div>
             </row>  
         </div>
