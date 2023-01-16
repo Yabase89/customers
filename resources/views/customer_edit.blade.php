@@ -116,7 +116,7 @@
                     
                 </div>
                 <div class="col-md-6">
-                    <button class="btn btn-error" type="reset">Cancel</button>
+                    <button class="btn btn-error cancel" type="reset">Cancel</button>
                     <button class="btn btn-success" type="submit">Update</button>
                 </div>
             </div>
@@ -171,6 +171,9 @@
                 });
                
                               
+           });
+           $(".cancel").on("click",function(){
+            location.reload();
            });
         });
         function onlyNumberKey(evt) {
